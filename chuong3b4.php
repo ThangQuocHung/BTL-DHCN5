@@ -19,6 +19,7 @@
             }  
          }  
        echo "Có " .$count. " kí tự " .$ki_tu_can_tim. " trong chuỗi '" .$string_ban_dau. "'";
+       echo"tést"
     ?>
 </body>
 </html>
