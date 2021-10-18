@@ -1,6 +1,6 @@
-<!--Bài tập Hàm trong PHP: Thiết kế hiện thị thông tin bài tập dưới đây trên một trang
+Bài tập Hàm trong PHP: Thiết kế hiện thị thông tin bài tập dưới đây trên một trang
 web<br>
-1. Viết PHP script để xử lý hàm để tính giai thừa của một số <br>-->
+1. Viết PHP script để xử lý hàm để tính giai thừa của một số <br>
 <html>
 <form method="post" action="#">
     <table>
