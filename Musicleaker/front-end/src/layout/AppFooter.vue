@@ -14,5 +14,29 @@
             >
           </div>
         </div>
+        <div class="col-md-6">
+          <ul class="nav nav-footer justify-content-end">
+            <li class="nav-item">
+              <a
+                href="http://localhost:8080/"
+                class="nav-link"
+                target="_blank"
+                rel="noopener"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                href="tel: +0385870810"
+                class="nav-link"
+                target="_blank"
+                rel="noopener"
+                >Liên hệ: +0385870810</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </footer>
 </template>
