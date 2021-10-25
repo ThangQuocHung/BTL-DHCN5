@@ -7,13 +7,18 @@
 
       <div class="row" slot="content-header" slot-scope="{ closeMenu }">
         <div class="col-6 collapse-brand">
-          <a href=""><img src="img/brand/white.png" /></a>
+          <a
+            href=""
+          >
+            <img src="img/brand/white.png" />
+          </a>
         </div>
         <div class="col-6 collapse-close">
           <close-button @click="closeMenu"></close-button>
         </div>
       </div>
-       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
         <div
           slot="title"
           href="#"
@@ -28,7 +33,7 @@
         <li class="nav-item">
           <a
             class="nav-link nav-link-icon"
-            href="http://localhost:8080/"
+            href="https://www.facebook.com/tx.trongnghia98"
             target="_blank"
             rel="noopener"
             data-toggle="tooltip"
@@ -41,7 +46,7 @@
         <li class="nav-item">
           <a
             class="nav-link nav-link-icon"
-            href="http://localhost:8080/"
+            href="https://github.com/futureskyprojects"
             target="_blank"
             rel="noopener"
             data-toggle="tooltip"

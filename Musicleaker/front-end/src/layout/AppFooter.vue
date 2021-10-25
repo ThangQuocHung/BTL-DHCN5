@@ -7,7 +7,7 @@
           <div class="copyright">
             &copy; {{ year }}
             <a
-              href="http://localhost:8080/"
+              href="https://fb.com/tx.trongnghia98"
               target="_blank"
               rel="noopener"
               >MusicLeaker v2.0</a
@@ -18,7 +18,7 @@
           <ul class="nav nav-footer justify-content-end">
             <li class="nav-item">
               <a
-                href="http://localhost:8080/"
+                href="https://fb.com/tx.trongnghia98"
                 class="nav-link"
                 target="_blank"
                 rel="noopener"
@@ -27,11 +27,11 @@
             </li>
             <li class="nav-item">
               <a
-                href="tel: +0385870810"
+                href="tel: +84886483147"
                 class="nav-link"
                 target="_blank"
                 rel="noopener"
-                >Liên hệ: +0385870810</a
+                >Liên hệ: +84 886 48 3147</a
               >
             </li>
           </ul>
