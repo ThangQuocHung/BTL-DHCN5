@@ -1,34 +1,41 @@
 {
-  "name": "musicleaker",
-  "version": "0.1.0",
-  "private": true,
+  "name": "front-end",
+  "version": "0.0.0",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "test": "ng test"
   },
+  "private": true,
   "dependencies": {
-    "axios": "^0.19.0",
-    "bootstrap-vue": "^2.0.4",
-    "flatpickr": "^4.5.1",
-    "nouislider": "^11.1.0",
-    "register-service-worker": "^1.5.2",
-    "view-design": "^4.0.2",
-    "vue": "^2.6.6",
-    "vue-axios": "^2.1.5",
-    "vue-flatpickr-component": "^8.1.1",
-    "vue-lazyload": "^1.2.6",
-    "vue-router": "^3.0.2",
-    "vue-session": "^1.0.0",
-    "vue2-transitions": "^0.2.3"
+    "@angular/animations": "~12.0.3",
+    "@angular/common": "~12.0.3",
+    "@angular/compiler": "~12.0.3",
+    "@angular/core": "~12.0.3",
+    "@angular/forms": "~12.0.3",
+    "@angular/platform-browser": "~12.0.3",
+    "@angular/platform-browser-dynamic": "~12.0.3",
+    "@angular/router": "~12.0.3",
+    "rxjs": "~6.6.0",
+    "tslib": "^2.1.0",
+    "zone.js": "~0.11.4",
+    "bootstrap": "^5.0.1",
+    "jquery": "^3.6.0"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-plugin-pwa": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.6"
+    "@angular-devkit/build-angular": "~12.0.3",
+    "@angular/cli": "~12.0.3",
+    "@angular/compiler-cli": "~12.0.3",
+    "@types/jasmine": "~3.6.0",
+    "@types/node": "^12.11.1",
+    "jasmine-core": "~3.7.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "^1.5.0",
+    "typescript": "~4.2.3"
   }
 }
