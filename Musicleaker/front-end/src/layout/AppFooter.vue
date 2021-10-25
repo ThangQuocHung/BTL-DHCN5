@@ -7,7 +7,7 @@
           <div class="copyright">
             &copy; {{ year }}
             <a
-              href="https://fb.com/tx.trongnghia98"
+              href="https://www.facebook.com/"
               target="_blank"
               rel="noopener"
               >MusicLeaker v2.0</a
@@ -18,7 +18,7 @@
           <ul class="nav nav-footer justify-content-end">
             <li class="nav-item">
               <a
-                href="https://fb.com/tx.trongnghia98"
+                href="https://www.facebook.com/"
                 class="nav-link"
                 target="_blank"
                 rel="noopener"
