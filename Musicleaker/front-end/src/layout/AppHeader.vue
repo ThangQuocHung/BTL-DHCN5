@@ -13,4 +13,45 @@
           <close-button @click="closeMenu"></close-button>
         </div>
       </div>
+       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+        <div
+          slot="title"
+          href="#"
+          class="nav-link"
+          data-toggle="dropdown"
+          role="button"
+        >
+          <span class="nav-link-inner--text">Tìm và lưu trữ nhạc của bạn</span>
+        </div>
+      </ul>
+      <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+        <li class="nav-item">
+          <a
+            class="nav-link nav-link-icon"
+            href="http://localhost:8080/"
+            target="_blank"
+            rel="noopener"
+            data-toggle="tooltip"
+            title="Like us on Facebook"
+          >
+            <i class="fa fa-facebook-square"></i>
+            <span class="nav-link-inner--text d-lg-none">Facebook</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link nav-link-icon"
+            href="http://localhost:8080/"
+            target="_blank"
+            rel="noopener"
+            data-toggle="tooltip"
+            title="Star us on Github"
+          >
+            <i class="fa fa-github"></i>
+            <span class="nav-link-inner--text d-lg-none">Github</span>
+          </a>
+        </li>
+      </ul>
+    </base-nav>
+  </header>
 </template>
