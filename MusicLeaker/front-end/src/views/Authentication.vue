@@ -29,6 +29,7 @@
                   ĐĂNG NHẬP
                 </div>
               </template>
+              
               <template>
                 <div class="text-center text-muted mb-4">
                   <small>Tiến hành xác thực danh tính để tiếp tục</small>
@@ -184,6 +185,7 @@
                   </div>
                 </card>
               </div>
+              
               <div class="col-lg-4" align="center">
                 <card class="border-0" hover shadow body-classes="py-5">
                   <icon
@@ -207,7 +209,7 @@
                   </div>
                 </card>
               </div>
-              <!-- PICTURE 1 ====================================================================== -->
+              
               <div class="col-lg-4" align="center">
                 <card class="border-0" hover shadow body-classes="py-5">
                   <icon
@@ -350,15 +352,15 @@
             <div class="px-4">
               <img
                 v-lazy="
-                  'img/theme/57045397_2396567773906412_9002583388963471360_n.jpg'
+                  'img/theme/images.png'
                 "
                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;"
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
-                  <span class="d-block mb-1">Nguyễn Trọng Nghĩa</span>
-                  <small class="h6 text-muted">Back-end</small>
+                  <span class="d-block mb-1">Thằng Quốc Hưng</span>
+                  <small class="h6 text-muted">PHP, MySQL</small>
                 </h5>
                 <div class="mt-3">
                   <base-button
@@ -371,7 +373,7 @@
                   ></base-button>
                   <base-button
                     tag="a"
-                    href="https://www.facebook.com/tx.trongnghia98"
+                    href="https://www.facebook.com/hung.cool.31"
                     type="warning"
                     icon="fa fa-facebook"
                     rounded
@@ -379,7 +381,7 @@
                   ></base-button>
                   <base-button
                     tag="a"
-                    href="https://github.com/futureskyprojects"
+                    href="https://github.com/ThangQuocHung/BTL-DHCN5"
                     type="warning"
                     icon="fa fa-github"
                     rounded
@@ -389,24 +391,25 @@
               </div>
             </div>
           </div>
+
           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
             <div class="px-4">
               <img
                 v-lazy="
-                  'img/theme/77268039_1735391823264311_8307585593739575296_n.jpg'
+                  'img/theme/images.png'
                 "
                 class="rounded-circle img-center img-fluid shadow shadow-lg--hover"
                 style="width: 200px;"
               />
               <div class="pt-4 text-center">
                 <h5 class="title">
-                  <span class="d-block mb-1">Hoàng Thiên Phú</span>
-                  <small class="h6 text-muted">Front-end</small>
+                  <span class="d-block mb-1">Mai Anh Nguyên</span>
+                  <small class="h6 text-muted">PHP, HTML, JS</small>
                 </h5>
                 <div class="mt-3">
                   <base-button
                     tag="a"
-                    href="https://twitter.com/PhuHoan73477827"
+                    href="#"
                     type="primary"
                     icon="fa fa-twitter"
                     rounded
@@ -414,7 +417,7 @@
                   ></base-button>
                   <base-button
                     tag="a"
-                    href="https://www.facebook.com/mrcariot"
+                    href="https://www.facebook.com/profile.php?id=100018133743884"
                     type="primary"
                     icon="fa fa-facebook"
                     rounded
@@ -422,7 +425,7 @@
                   ></base-button>
                   <base-button
                     tag="a"
-                    href="https://github.com/mchoang98"
+                    href="https://github.com/ThangQuocHung/BTL-DHCN"
                     type="primary"
                     icon="fa fa-github"
                     rounded
@@ -597,6 +600,7 @@ export default {
           .then(res => {
             if (res.data.id != undefined && res.data.id > 0) {
               var userObj = res.data;
+
               // Đăng nhập thành công, xử lý ở đây
               this.$Message["success"]({
                 background: true,
