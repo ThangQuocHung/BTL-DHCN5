@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 15, 2019 lúc 09:47 AM
--- Phiên bản máy phục vụ: 10.1.38-MariaDB
--- Phiên bản PHP: 7.3.4
+-- Host: 127.0.0.1
+-- Generation Time: Nov 15, 2021 at 01:02 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 8.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -19,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `musicleaker_db`
+-- Database: `musicleaker_db`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `user_account`
+-- Table structure for table `user_account`
 --
 
 CREATE TABLE `user_account` (
@@ -34,11 +33,11 @@ CREATE TABLE `user_account` (
   `password` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
   `fullname` text COLLATE utf8_unicode_ci NOT NULL,
   `email` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
-  `search_count` int(10) UNSIGNED NOT NULL DEFAULT '0'
+  `search_count` int(10) UNSIGNED NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `user_account`
+-- Dumping data for table `user_account`
 --
 
 INSERT INTO `user_account` (`id`, `username`, `password`, `fullname`, `email`, `search_count`) VALUES
@@ -47,7 +46,7 @@ INSERT INTO `user_account` (`id`, `username`, `password`, `fullname`, `email`, `
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `user_music`
+-- Table structure for table `user_music`
 --
 
 CREATE TABLE `user_music` (
@@ -57,7 +56,7 @@ CREATE TABLE `user_music` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `user_music`
+-- Dumping data for table `user_music`
 --
 
 INSERT INTO `user_music` (`id`, `u_id`, `song_key`) VALUES
@@ -65,18 +64,18 @@ INSERT INTO `user_music` (`id`, `u_id`, `song_key`) VALUES
 (8, 4, '64c596206508e6f1b79e8187cfb9cef6');
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `user_account`
+-- Indexes for table `user_account`
 --
 ALTER TABLE `user_account`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `username` (`username`);
 
 --
--- Chỉ mục cho bảng `user_music`
+-- Indexes for table `user_music`
 --
 ALTER TABLE `user_music`
   ADD PRIMARY KEY (`id`),
@@ -84,27 +83,27 @@ ALTER TABLE `user_music`
   ADD KEY `u_id` (`u_id`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `user_account`
+-- AUTO_INCREMENT for table `user_account`
 --
 ALTER TABLE `user_account`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT cho bảng `user_music`
+-- AUTO_INCREMENT for table `user_music`
 --
 ALTER TABLE `user_music`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- Các ràng buộc cho các bảng đã đổ
+-- Constraints for dumped tables
 --
 
 --
--- Các ràng buộc cho bảng `user_music`
+-- Constraints for table `user_music`
 --
 ALTER TABLE `user_music`
   ADD CONSTRAINT `user_ref` FOREIGN KEY (`u_id`) REFERENCES `user_account` (`id`);
