@@ -495,6 +495,7 @@
   </div>
 </template>
 <script>
+
 import Loader from "../components/Loading.vue";
 import { getUser, addUser, checkUsername } from "../api/User.js";
 export default {
