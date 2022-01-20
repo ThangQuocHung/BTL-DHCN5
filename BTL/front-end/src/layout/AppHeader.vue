@@ -33,7 +33,7 @@
         <li class="nav-item">
           <a
             class="nav-link nav-link-icon"
-            href="https://www.facebook.com/tx.trongnghia98"
+            href="https://www.facebook.com/hung.cool.31"
             target="_blank"
             rel="noopener"
             data-toggle="tooltip"
@@ -46,7 +46,7 @@
         <li class="nav-item">
           <a
             class="nav-link nav-link-icon"
-            href="https://github.com/futureskyprojects"
+            href="https://github.com/ThangQuocHung/BTL-DHCN5"
             target="_blank"
             rel="noopener"
             data-toggle="tooltip"
