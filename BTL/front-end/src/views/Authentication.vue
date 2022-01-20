@@ -592,7 +592,10 @@ export default {
           background: true,
           content: "Vui lòng nhập đầy đủ thông tin"
         });
+        console.log("hello");
       } else {
+                console.log("hello");
+
         this.isLoadingShow = true;
         getUser(this.username, this.password)
           .then(res => {

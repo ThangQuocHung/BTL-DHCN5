@@ -6,6 +6,8 @@ $data = json_decode(file_get_contents('php://input'), true);
 if (
     isset($data) && !empty($data)
 ) {
+
+    error_log(print_r($data,true));
     $username = $data["username"];
     $password = $data["password"];
 

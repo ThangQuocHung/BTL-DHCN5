@@ -18,7 +18,7 @@ class DabatabseHandler
             // $this->__conn = mysqli_connect('sql301.unaux.com', 'unaux_24923999', 'q61it9x65c', 'unaux_24923999_musicleaker') or die('Lỗi kết nối');
 
             // Kết nối csdl debug
-            $this->__conn = mysqli_connect('localhost:8080', 'root', '', 'musicleaker_db') or die('Lỗi kết nối');
+            $this->__conn = mysqli_connect('localhost', 'root', '', 'musicleaker_db') or die('Lỗi kết nối');
 
             // Xử lý truy vấn UTF8 để tránh lỗi font
             mysqli_query($this->__conn, "SET character_set_results = 'utf8', character_set_client = 'utf8', character_set_database = 'utf8', character_set_server = 'utf8'");
